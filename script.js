@@ -17,10 +17,10 @@ class Rectangle {
 		return this.width*this.height;
 	}
 }
-class Square extends Animal{
+class Square extends Rectangle{
 	constructor(side)
 	{
-		this.side=side;
+		super(side, side);
 	}
 	getPerimeter()
 	{
